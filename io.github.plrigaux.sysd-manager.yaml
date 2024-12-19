@@ -11,6 +11,7 @@ finish-args:
 - --socket=wayland
 - --device=dri
 - --filesystem=host
+- --filesystem=/var/log:ro
 - --env=RUST_LOG=info
 - --env=RUST_BACKTRACE=1
 - --env=SYSDMNG_DIST_MODE=flatpack
@@ -39,6 +40,6 @@ modules:
   sources:
   - type: git
     url: https://github.com/plrigaux/sysd-manager.git
-    tag: v1.3.2
-    commit: d1e9125c751331cf82739ed6a126a1b4fdd788be
+    tag: v1.4.0
+    commit: 811e400e9d6892d4b832dd275cb9130339fe8adb
   - cargo-sources.json
