@@ -457,14 +457,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/chrono/chrono-0.4.38.crate",
-        "sha256": "a21f936df1771bf62b77f047b726c4625ff2e8aa607c01ec06e5a05bd8463401",
-        "dest": "cargo/vendor/chrono-0.4.38"
+        "url": "https://static.crates.io/crates/chrono/chrono-0.4.39.crate",
+        "sha256": "7e36cc9d416881d2e24f9a963be5fb1cd90966419ac844274161d10488b3e825",
+        "dest": "cargo/vendor/chrono-0.4.39"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"a21f936df1771bf62b77f047b726c4625ff2e8aa607c01ec06e5a05bd8463401\", \"files\": {}}",
-        "dest": "cargo/vendor/chrono-0.4.38",
+        "contents": "{\"package\": \"7e36cc9d416881d2e24f9a963be5fb1cd90966419ac844274161d10488b3e825\", \"files\": {}}",
+        "dest": "cargo/vendor/chrono-0.4.39",
         "dest-filename": ".cargo-checksum.json"
     },
     {
@@ -1029,14 +1029,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/gtk4/gtk4-0.9.4.crate",
-        "sha256": "9376d14d7e33486c54823a42bef296e882b9f25cb4c52b52f4d1d57bbadb5b6d",
-        "dest": "cargo/vendor/gtk4-0.9.4"
+        "url": "https://static.crates.io/crates/gtk4/gtk4-0.9.5.crate",
+        "sha256": "b697ff938136625f6acf75f01951220f47a45adcf0060ee55b4671cf734dac44",
+        "dest": "cargo/vendor/gtk4-0.9.5"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"9376d14d7e33486c54823a42bef296e882b9f25cb4c52b52f4d1d57bbadb5b6d\", \"files\": {}}",
-        "dest": "cargo/vendor/gtk4-0.9.4",
+        "contents": "{\"package\": \"b697ff938136625f6acf75f01951220f47a45adcf0060ee55b4671cf734dac44\", \"files\": {}}",
+        "dest": "cargo/vendor/gtk4-0.9.5",
         "dest-filename": ".cargo-checksum.json"
     },
     {
