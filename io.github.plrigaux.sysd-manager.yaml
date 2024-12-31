@@ -10,11 +10,11 @@ finish-args:
 - --socket=fallback-x11
 - --socket=wayland
 - --device=dri
-- --filesystem=host
+- --filesystem=host-os
+- --filesystem=host-etc
 - --filesystem=/var/log:ro
 - --env=RUST_LOG=info
 - --env=RUST_BACKTRACE=1
-- --env=SYSDMNG_DIST_MODE=flatpack
 - --talk-name=org.freedesktop.systemd1
 - --system-talk-name=org.freedesktop.systemd1
 build-options:
@@ -27,7 +27,7 @@ modules:
       CARGO_HOME: /run/build/sysd-manager/cargo
   build-commands:
   - cargo --offline fetch --manifest-path Cargo.toml --verbose
-  - cargo --offline build --release --verbose
+  - cargo --offline build --release --verbose --features flatpak
   - install -Dm755 ./target/release/sysd-manager -t /app/bin/
   - install -Dm644 ./data/applications/io.github.plrigaux.sysd-manager.desktop -t
     /app/share/applications
@@ -40,6 +40,6 @@ modules:
   sources:
   - type: git
     url: https://github.com/plrigaux/sysd-manager.git
-    tag: v1.5.1
-    commit: 3c8106aa211f7851de51d9c34d3f51f97022073c
+    tag: v1.6.0
+    commit: e331602830d4fe5d153fd302cc3819a5c05ff458
   - cargo-sources.json
