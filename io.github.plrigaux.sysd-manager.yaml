@@ -26,8 +26,8 @@ modules:
     env:
       CARGO_HOME: /run/build/sysd-manager/cargo
   build-commands:
-  - cargo --offline fetch --manifest-path Cargo.toml
-  - cargo --offline build --release --features flatpak
+  - cargo --offline fetch --manifest-path Cargo.toml --verbose
+  - cargo --offline build --release --verbose --features flatpak
   - install -Dm755 ./target/release/sysd-manager -t /app/bin/
   - install -Dm644 ./data/applications/io.github.plrigaux.sysd-manager.desktop -t
     /app/share/applications
@@ -40,6 +40,6 @@ modules:
   sources:
   - type: git
     url: https://github.com/plrigaux/sysd-manager.git
-    tag: v1.13.0
-    commit: 20db932b0fadc7f1412cd204860134bc329b0822
+    tag: v1.13.1
+    commit: e59b6fb501e5713f6aebeb0b2d1e0cb2ce41c406
   - cargo-sources.json
