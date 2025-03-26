@@ -1,6 +1,6 @@
 id: io.github.plrigaux.sysd-manager
 runtime: org.gnome.Platform
-runtime-version: '47'
+runtime-version: '48'
 sdk: org.gnome.Sdk
 sdk-extensions:
 - org.freedesktop.Sdk.Extension.rust-stable
@@ -40,6 +40,6 @@ modules:
   sources:
   - type: git
     url: https://github.com/plrigaux/sysd-manager.git
-    tag: v1.18.2
-    commit: 43fea492f56e3d5d86afae6d83c1ecd49a8a7ef6
+    tag: v1.19.0
+    commit: f601128d868f1526106bfe5260122bc704c2743b
   - cargo-sources.json
