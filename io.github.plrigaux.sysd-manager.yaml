@@ -40,6 +40,6 @@ modules:
   sources:
   - type: git
     url: https://github.com/plrigaux/sysd-manager.git
-    tag: v1.22.0
-    commit: fb0c2eb60dfd4f2e381ba2ac17912034f6a22a01
+    tag: v1.22.2
+    commit: f02d225c0205eba7da48c6210ae24f0ae3bcae68
   - cargo-sources.json
