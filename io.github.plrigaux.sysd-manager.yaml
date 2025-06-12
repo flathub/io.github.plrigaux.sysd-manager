@@ -13,8 +13,6 @@ finish-args:
 - --filesystem=host-os
 - --filesystem=host-etc
 - --filesystem=/var/log:ro
-- --env=RUST_LOG=info
-- --env=RUST_BACKTRACE=1
 - --talk-name=org.freedesktop.systemd1
 - --system-talk-name=org.freedesktop.systemd1
 build-options:
@@ -36,10 +34,11 @@ modules:
   - install -Dm644 ./data/schemas/io.github.plrigaux.sysd-manager.gschema.xml -t /app/share/glib-2.0/schemas
   - install -Dm644 ./data/metainfo/io.github.plrigaux.sysd-manager.metainfo.xml -t
     /app/share/metainfo
+  - cp -r ./target/locale /app/share/
   - glib-compile-schemas /app/share/glib-2.0/schemas
   sources:
   - type: git
     url: https://github.com/plrigaux/sysd-manager.git
-    tag: v1.28.0
-    commit: 5d78ff2c4e3965e15442bad114130c319da8a50e
+    tag: v1.29.0
+    commit: 786e5e16039d761ff829f224f40ba19ca864f6fa
   - cargo-sources.json
