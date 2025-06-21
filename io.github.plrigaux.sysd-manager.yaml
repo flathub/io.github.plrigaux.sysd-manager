@@ -27,18 +27,16 @@ modules:
   - cargo --offline fetch --manifest-path Cargo.toml --verbose
   - cargo --offline build --release --verbose --features flatpak
   - install -Dm755 ./target/release/sysd-manager -t /app/bin/
-  - install -Dm644 ./data/applications/io.github.plrigaux.sysd-manager.desktop -t
-    /app/share/applications
   - install -Dm644 ./data/icons/hicolor/scalable/apps/io.github.plrigaux.sysd-manager.svg
     -t /app/share/icons/hicolor/scalable/apps/
   - install -Dm644 ./data/schemas/io.github.plrigaux.sysd-manager.gschema.xml -t /app/share/glib-2.0/schemas
-  - install -Dm644 ./data/metainfo/io.github.plrigaux.sysd-manager.metainfo.xml -t
-    /app/share/metainfo
+  - install -Dm644 ./target/loc/io.github.plrigaux.sysd-manager.desktop -t /app/share/applications
+  - install -Dm644 ./target/loc/io.github.plrigaux.sysd-manager.metainfo.xml -t /app/share/metainfo
   - cp -r ./target/locale /app/share/
   - glib-compile-schemas /app/share/glib-2.0/schemas
   sources:
   - type: git
     url: https://github.com/plrigaux/sysd-manager.git
-    tag: v1.30.5
-    commit: fb3d4c3732a51247514019f6bc05cc4c527f64f7
+    tag: v1.30.8
+    commit: 210f4ecaf30da85f95b0d68fd4a3e6d6fc636164
   - cargo-sources.json
