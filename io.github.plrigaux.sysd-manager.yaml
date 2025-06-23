@@ -26,6 +26,11 @@ modules:
   build-commands:
   - cargo --offline fetch --manifest-path Cargo.toml --verbose
   - cargo --offline build --release --verbose --features flatpak
+  - echo ""
+  - echo Generating files
+  - echo ""
+  - cargo --offline run -p transtools -- packfiles
+  - echo ""
   - install -Dm755 ./target/release/sysd-manager -t /app/bin/
   - install -Dm644 ./data/icons/hicolor/scalable/apps/io.github.plrigaux.sysd-manager.svg
     -t /app/share/icons/hicolor/scalable/apps/
@@ -37,6 +42,6 @@ modules:
   sources:
   - type: git
     url: https://github.com/plrigaux/sysd-manager.git
-    tag: v1.30.8
-    commit: 210f4ecaf30da85f95b0d68fd4a3e6d6fc636164
+    tag: v1.30.9
+    commit: 27883e31a6125754c7777663a418d18aac6cecdc
   - cargo-sources.json
