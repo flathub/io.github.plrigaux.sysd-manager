@@ -12,7 +12,7 @@ finish-args:
 - --device=dri
 - --filesystem=host-os
 - --filesystem=host-etc
-- --filesystem=home
+- --filesystem=xdg-config
 - --filesystem=/var/log:ro
 - --talk-name=org.freedesktop.systemd1
 - --system-talk-name=org.freedesktop.systemd1
@@ -44,5 +44,5 @@ modules:
   - type: git
     url: https://github.com/plrigaux/sysd-manager.git
     tag: v2.0.0
-    commit: d9b412d9ade4b5c72175234a922dcd5c1ec3a3c4
+    commit: aaa2bcb9a7b780c69462ac4ee30d23cb009a6e93
   - cargo-sources.json
