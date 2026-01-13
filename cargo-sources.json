@@ -1952,6 +1952,19 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/quick-xml/quick-xml-0.39.0.crate",
+        "sha256": "f2e3bf4aa9d243beeb01a7b3bc30b77cfe2c44e24ec02d751a7104a53c2c49a1",
+        "dest": "cargo/vendor/quick-xml-0.39.0"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"f2e3bf4aa9d243beeb01a7b3bc30b77cfe2c44e24ec02d751a7104a53c2c49a1\", \"files\": {}}",
+        "dest": "cargo/vendor/quick-xml-0.39.0",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/quote/quote-1.0.43.crate",
         "sha256": "dc74d9a594b72ae6656596548f56f667211f8a97b3d4c3d467150794690dc40a",
         "dest": "cargo/vendor/quote-1.0.43"
@@ -3239,14 +3252,14 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/zmij/zmij-1.0.13.crate",
-        "sha256": "ac93432f5b761b22864c774aac244fa5c0fd877678a4c37ebf6cf42208f9c9ec",
-        "dest": "cargo/vendor/zmij-1.0.13"
+        "url": "https://static.crates.io/crates/zmij/zmij-1.0.14.crate",
+        "sha256": "bd8f3f50b848df28f887acb68e41201b5aea6bc8a8dacc00fb40635ff9a72fea",
+        "dest": "cargo/vendor/zmij-1.0.14"
     },
     {
         "type": "inline",
-        "contents": "{\"package\": \"ac93432f5b761b22864c774aac244fa5c0fd877678a4c37ebf6cf42208f9c9ec\", \"files\": {}}",
-        "dest": "cargo/vendor/zmij-1.0.13",
+        "contents": "{\"package\": \"bd8f3f50b848df28f887acb68e41201b5aea6bc8a8dacc00fb40635ff9a72fea\", \"files\": {}}",
+        "dest": "cargo/vendor/zmij-1.0.14",
         "dest-filename": ".cargo-checksum.json"
     },
     {
